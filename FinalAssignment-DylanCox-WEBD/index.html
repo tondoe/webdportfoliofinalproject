@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap"
+        rel="stylesheet">
+
+    <title>Dylan Cox | Portfolio</title>
+
+</head>
+
+<body>
+
+    <!-- Navigation Menu Section -->
+    <header>
+        <img src="assets/logo.png" alt="logo image">
+
+        <nav>
+            <!-- CSS-only hamburger toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+            <!-- Hamburger icon -->
+            <label for="nav-toggle" class="menu-toggle">☰</label>
+
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Featured Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero-grid">
+                    <div class="hero-left">
+                        <h1>
+                            Hey, there! I'm Dylan Cox.
+                            <br>
+                            <span id="typewriter"></span>
+                        </h1>
+
+                        <p class="hero-desc">
+                        <p class="hero-desc">
+                            I am currently a student pursuing a career in software development and web design.
+                            I enjoy building websites, practical applications, and small games while continuously
+                            improving my programming skills.
+                            I'm especially interested in exploring AI development and intelligent software systems in
+                            the future.
+                        </p>
+                        </p>
+
+                        <a class="hero-cta" href="#contact">Let's Connect <span>→</span></a>
+
+                        <p class="hero-note">Always learning, always building, bring on the next challenge.</p>
+                    </div>
+
+                    <div class="hero-right">
+                        <img class="hero-mascot" src="assets/mainlogo.png" alt="hero image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission Section -->
+            <section id="mission">
+                <h2>Mission / Vision</h2>
+                <p>
+                    My goal is to continiously improve as a developer while building practical softwares, websites, and
+                    applications that solve real problems.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+
+            <section id="skills">
+                <h2>Skills</h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-badge">
+                            <img class="skill-logo" src="assets/html.png" alt="HTML logo">
+                        </div>
+                        <p class="skill-name">HTML</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-badge">
+                            <img class="skill-logo" src="assets/css.png" alt="CSS logo">
+                        </div>
+                        <p class="skill-name">CSS</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-badge">
+                            <img class="skill-logo" src="assets/javascript.png" alt="JavaScript logo">
+                        </div>
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-badge">
+                            <img class="skill-logo" src="assets/java.png" alt="Java logo">
+                        </div>
+                        <p class="skill-name">Java</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-badge">
+                            <img class="skill-logo" src="assets/github.png" alt="GitHub logo">
+                        </div>
+                        <p class="skill-name">GitHub</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-badge">
+                            <img class="skill-logo" src="assets/sql.png" alt="SQL logo">
+                        </div>
+                        <p class="skill-name">SQL</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Work Section -->
+            <section id="work">
+                <h2>Featured Work</h2>
+
+                <div class="work-card">
+                    <h3>Motivational Quote Generator</h3>
+
+                    <div class="work-embed">
+                        <iframe height="350" src="https://codepen.io/dylancdev/embed/OPRVZeZ?default-tab=result"
+                            title="Motivational Quote Generator" frameborder="0" loading="lazy" allowtransparency="true"
+                            style="width: 100%;">
+                        </iframe>
+                    </div>
+
+                    <p class="work-description">
+                        A simple JavaScript quote generator that dynamically displays motivational quotes.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Resume Section -->
+            <section id="resume">
+                <h3>View my professional experience and education:</h3>
+                <p>
+                    <button><a href="assets/DylanCoxResume.pdf" download>
+                        Download Resume (PDF)
+                    </a></button>
+                </p>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p class="contact-intro">
+                    Have a project idea, opportunity, or question? Send me a message below.
+                </p>
+
+                <form class="contact-form" action="https://formspree.io/f/xdawoeww" method="post">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="hidden" name="_next" value="thankyou.html">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Dylan Cox • Portfolio Website</p>
+    </footer>
+
+    <script>
+        const words = [
+            "Web Developer",
+            "Java Programmer",
+            "Software Engineer",
+            "Full Stack Student"
+        ];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        const typingSpeed = 90;          // slower typing
+        const deletingSpeed = 50;        // slightly faster delete
+        const delayBetweenWords = 1800;  // pause before deleting
+
+        const typeElement = document.getElementById("typewriter");
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+
+            if (!isDeleting) {
+                typeElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+
+                if (charIndex === currentWord.length) {
+                    setTimeout(() => isDeleting = true, delayBetweenWords);
+                }
+            } else {
+                typeElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                }
+            }
+
+            setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+        }
+
+        typeEffect();
+    </script>
+</body>
+
+</html>
